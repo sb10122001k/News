@@ -12,7 +12,7 @@ app.use(express.json())
 
 async function main() {
     console.log("\n Reached Here")
-    await mongoose.connect("mongodb+srv://sb10122001k:Shubham1@cluster0.asfxdm3.mongodb.net/NewsAPP?retryWrites=true&w=majority");
+    await mongoose.connect("mongodb+srv://cluster0.asfxdm3.mongodb.net/NewsAPP?retryWrites=true&w=majority");
     console.log("Connection open");
   }
 
