@@ -23,7 +23,7 @@ const HomeScreen = ({ navigation }: { navigation: HomeScreenNavigationProp }) =>
     // Fetch news data from your API here
     const fetchNewsData = async () => {
       try {
-        const response = await fetch('http://192.168.24.207:3000/api/getNews');
+        const response = await fetch('http://localhost:3000/api/getNews');
         const data = await response.json();
         setNewsData(data);
       } catch (error) {
